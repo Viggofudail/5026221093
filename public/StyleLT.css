@@ -1,0 +1,114 @@
+
+body{
+    background-color:black;
+    font-family: Inter,Helvetica,Arial,system-ui,-apple-system;
+}
+
+a:visited {
+    color: #FFF;
+}
+.share-button {
+    position: fixed;
+    top: 20px; 
+    right: 320px; 
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 50%; 
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.share-button i {
+    font-size: 14px; 
+}
+
+.profpicture{
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-name{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-family: inherit;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 0.3;  
+}
+
+.deskription{
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+
+.border{
+    color: #FFF;
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 55px; 
+    text-decoration: none;
+
+    width: 550px;
+    height: 56px;
+    border-radius: 50px;
+    background: #3aa362;
+
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.border2{
+    color: #060505;
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 55px; 
+    text-decoration: none;
+
+    width: 340px;
+    height: 56px;
+    border-radius: 50px;
+    background: #cdcdcd;
+
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.border:hover {
+    transform: scale(1.2);
+}
+
+.photo-linktree{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 90px;
+}

@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aquamarine;
+    font-size: 25px;
+}
+a:link {
+text-decoration: none;
+color: blue;
+}
+a:visited{
+text-decoration: none;
+color: blue;
+}
+a:hover{
+font-size: larger;
+color: rgb(255, 0, 0);  
+text-decoration: underline;
+}
+
+.headingmerah {
+color: azure;
+}
+
+.parratakanan {
+text-align: right;
+}
+
+.partengah {
+text-align: center;
+}
+
+.rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #15e1a7;
+    padding: 25px;
+    width: 200px;
+    height: 60px;
+    
+  }
+
+  .rcorners1 {
+    border-radius: 25px;
+    background: #05d488;
+    padding: 20px;
+    width: 200px;
+    height: 60px;
+  }
