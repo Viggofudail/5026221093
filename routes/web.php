@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\PegawaidbController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\TugasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +19,7 @@ use App\Http\Controllers\DosenController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('ets');
 });
 
 Route::get('/error', function () {
@@ -29,9 +33,6 @@ Route::get('/error', function () {
 
 Route::get('dosen', 'App\Http\Controllers\DosenController@index');
 Route::get('biodata', 'App\Http\Controllers\DosenController@biodata');
-Route::get('/pegawai/{nama}', 'App\Http\Controllers\pegawaiController@index');
-Route::get('/formulir', 'App\Http\Controllers\PegawaiController@formulir');
-Route::post('/formulir/proses', 'App\Http\Controllers\PegawaiController@proses');
 Route::get('/blog', 'App\Http\Controllers\BlogController@home');
 Route::get('/blog/tentang', 'App\Http\Controllers\BlogController@tentang');
 Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@kontak');
@@ -45,4 +46,16 @@ Route::get('/contact', 'App\Http\Controllers\PrController@contact');
 Route::get('/pricing', 'App\Http\Controllers\PrController@pricing');
 Route::get('/faq', 'App\Http\Controllers\PrController@faq');
 
+Route::get('/pegawai', [App\Http\Controllers\PegawaidbController::class, 'index']);
+Route::get('/pegawai/tambah', [App\Http\Controllers\PegawaidbController::class, 'tambah']);
+Route::post('/pegawai/store', [App\Http\Controllers\PegawaidbController::class, 'store']);
+Route::get('/pegawai/cari', [App\Http\Controllers\PegawaidbController::class, 'cari']);
 
+Route::get('/pegawai/edit/{id}', [App\Http\Controllers\PegawaidbController::class, 'edit']);
+Route::post('/pegawai/update/{id}', [App\Http\Controllers\PegawaidbController::class, 'update']);
+Route::get('/pegawai/delete/{id}', [App\Http\Controllers\PegawaidbController::class, 'delete']);
+
+
+Route::get('/test', function () {
+    return view('template');
+});
