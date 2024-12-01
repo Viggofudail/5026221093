@@ -25,9 +25,9 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/pricing.html">Pricing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
 
 
                         </ul>

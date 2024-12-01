@@ -6,7 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaidbController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\TugasController;
-
+use App\Http\Controllers\MobilController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,6 +54,15 @@ Route::get('/pegawai/cari', [App\Http\Controllers\PegawaidbController::class, 'c
 Route::get('/pegawai/edit/{id}', [App\Http\Controllers\PegawaidbController::class, 'edit']);
 Route::post('/pegawai/update/{id}', [App\Http\Controllers\PegawaidbController::class, 'update']);
 Route::get('/pegawai/delete/{id}', [App\Http\Controllers\PegawaidbController::class, 'delete']);
+
+
+Route::get('/mobil', [App\Http\Controllers\MobilController::class, 'index']);
+Route::get('/mobil/tambah', [App\Http\Controllers\MobilController::class, 'tambah']);
+Route::get('/mobil/cari', [App\Http\Controllers\MobilController::class, 'cari']);
+Route::post('/mobil/store', [App\Http\Controllers\MobilController::class, 'store']);
+Route::get('/mobil/edit/{id}', [App\Http\Controllers\MobilController::class, 'edit']);
+Route::post('/mobil/update/{id}', [App\Http\Controllers\MobilController::class, 'update']);
+Route::get('/mobil/delete/{id}', [App\Http\Controllers\MobilController::class, 'delete']);
 
 
 Route::get('/test', function () {
