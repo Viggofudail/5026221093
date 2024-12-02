@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="/mobil">mobil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="/pegawai">pegawai</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="/">ETS</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
   <title>Muhammad Viggo Fudail - 5026221093</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
