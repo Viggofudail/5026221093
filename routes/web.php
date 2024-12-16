@@ -64,6 +64,9 @@ Route::get('/mobil/edit/{id}', [App\Http\Controllers\MobilController::class, 'ed
 Route::post('/mobil/update/{id}', [App\Http\Controllers\MobilController::class, 'update']);
 Route::get('/mobil/delete/{id}', [App\Http\Controllers\MobilController::class, 'delete']);
 
+Route::get('/latets', [App\Http\Controllers\latetsController::class, 'index']);
+Route::get('/latets/tambah', [App\Http\Controllers\latetsController::class, 'tambah']);
+Route::post('/latets/store', [App\Http\Controllers\latetsController::class, 'store']);
 
 Route::get('/test', function () {
     return view('template');
