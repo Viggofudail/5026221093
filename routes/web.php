@@ -68,6 +68,8 @@ Route::get('/latets', [App\Http\Controllers\latetsController::class, 'index']);
 Route::get('/latets/tambah', [App\Http\Controllers\latetsController::class, 'tambah']);
 Route::post('/latets/store', [App\Http\Controllers\latetsController::class, 'store']);
 
+Route::get('/counter', [App\Http\Controllers\PageViewController::class, 'counter']);
+
 Route::get('/test', function () {
     return view('template');
 });
