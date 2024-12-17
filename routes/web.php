@@ -69,6 +69,13 @@ Route::get('/latets/tambah', [App\Http\Controllers\latetsController::class, 'tam
 Route::post('/latets/store', [App\Http\Controllers\latetsController::class, 'store']);
 
 Route::get('/counter', [App\Http\Controllers\PageViewController::class, 'counter']);
+Route::get('/chat', [App\Http\Controllers\chatController::class, 'index']);
+Route::get('/kategori', [App\Http\Controllers\chatController::class, 'kategori']);
+Route::post('/kategori/kirim', [App\Http\Controllers\chatController::class, 'show'])->name('latihancobakirim');;
+
+Route::get('/index', [App\Http\Controllers\easController::class, 'index']);
+Route::get('/edit/{id}', [App\Http\Controllers\easController::class, 'edit']);
+Route::get('/view/{id}', [App\Http\Controllers\easController::class, 'view']);
 
 Route::get('/test', function () {
     return view('template');
